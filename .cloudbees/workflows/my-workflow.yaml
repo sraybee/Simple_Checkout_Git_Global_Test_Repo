@@ -10,10 +10,10 @@ jobs:
   build:
     steps:          
       - name: Get source code
-        uses: cloudbees-io/checkout@v2.0.2
+        uses: cloudbees-io/checkout@v2
 
       - name: Setup git credentials
-        uses: cloudbees-io/configure-git-global-credentials@v2.0.3
+        uses: cloudbees-io/configure-git-global-credentials@v2
         
       - name: Say hello
         uses: docker://golang:1.20.3-alpine3.17
