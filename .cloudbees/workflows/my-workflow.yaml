@@ -8,7 +8,13 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    steps:
+    steps:          
+      - name: Get source code
+        uses: cloudbees-io/checkout@v1
+
+      - name: Setup git credentials
+        uses: cloudbees-io/configure-git-global-credentials@v1
+        
       - name: Say hello
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
