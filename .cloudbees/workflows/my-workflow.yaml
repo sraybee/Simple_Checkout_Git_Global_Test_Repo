@@ -10,7 +10,7 @@ jobs:
   build:
     steps:          
       - name: Get source code
-        uses: cloudbees-io/checkout@v2
+        uses: cloudbees-io/checkout@v1
 
       - name: Setup git credentials
         uses: cloudbees-io/configure-git-global-credentials@v2
